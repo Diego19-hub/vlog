@@ -1,0 +1,272 @@
+.author-app {
+  width: min(100% - 2rem, 1100px);
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+.eyebrow {
+  color: #4f46e5;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.author-app h1 {
+  margin: 0.5rem 0;
+  font-size: clamp(2.5rem, 8vw, 5rem);
+}
+
+.login-page {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 1rem;
+}
+
+.login-form {
+  display: grid;
+  gap: 1.25rem;
+  width: min(100%, 440px);
+  padding: 2rem;
+  border-radius: 1rem;
+  background: #ffffff;
+  box-shadow: 0 20px 50px rgb(15 23 42 / 10%);
+}
+
+.login-form h1 {
+  margin: 0;
+}
+
+.login-form label {
+  display: grid;
+  gap: 0.5rem;
+  font-weight: 700;
+}
+
+.login-form input {
+  padding: 0.8rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+}
+
+.login-form button,
+.dashboard-header button {
+  padding: 0.8rem 1rem;
+  border: 0;
+  border-radius: 0.6rem;
+  color: #ffffff;
+  background: #4f46e5;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.form-error {
+  color: #b91c1c;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 2rem;
+}
+
+.author-posts {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.author-post-card {
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  background: #ffffff;
+}
+
+.post-card-header,
+.author-post-card footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.status-badge {
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.status-badge.published {
+  color: #166534;
+  background: #dcfce7;
+}
+
+.status-badge.draft {
+  color: #92400e;
+  background: #fef3c7;
+}
+
+.author-post-card > p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.author-post-card footer {
+  margin-top: 1.5rem;
+}
+
+.author-post-card footer button {
+  padding: 0.7rem 1rem;
+  border: 0;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  background: #4f46e5;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.author-post-card footer button:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+.primary-link,
+.edit-link,
+.back-link {
+  display: inline-block;
+  color: #4f46e5;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.primary-link {
+  margin-top: 1.5rem;
+  padding: 0.8rem 1rem;
+  border-radius: 0.6rem;
+  color: #ffffff;
+  background: #4f46e5;
+}
+
+.back-link {
+  margin-bottom: 2rem;
+}
+
+.post-form {
+  display: grid;
+  gap: 1.25rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: #ffffff;
+}
+
+.post-form h1 {
+  margin: 0.5rem 0;
+}
+
+.post-form label:not(.checkbox-label) {
+  display: grid;
+  gap: 0.5rem;
+  font-weight: 700;
+}
+
+.post-form input[type="text"],
+.post-form textarea {
+  width: 100%;
+  padding: 0.9rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+}
+
+.post-form textarea {
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.post-form > button {
+  justify-self: start;
+  padding: 0.8rem 1rem;
+  border: 0;
+  border-radius: 0.6rem;
+  color: #ffffff;
+  background: #4f46e5;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.page-status {
+  padding: 4rem;
+  text-align: center;
+}
+
+.post-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.author-post-card footer .delete-button {
+  background: #dc2626;
+}
+
+.comment-management {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.managed-comment {
+  padding: 1.25rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  background: #ffffff;
+}
+
+.managed-comment > header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.managed-comment header span {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.managed-comment textarea {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.8rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+  resize: vertical;
+}
+
+.comment-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.comment-actions button {
+  padding: 0.6rem 0.9rem;
+  border: 0;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  background: #4f46e5;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.comment-actions .delete-button {
+  background: #dc2626;
+}
